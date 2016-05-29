@@ -3,7 +3,7 @@
 	/** Config **/
 
 	// Debug mode
-	var DEBUG = true;
+	var DEBUG = false;
 
 	// Should mouse control hiding and showing of connections?
 	var MOUSE_INPUT = false;
@@ -15,7 +15,7 @@
 	var POINTS_AMOUNT = 0;
 
 	// Margin of points on canvas (The lower, the more points. Values under 10 might hang the application.)
-	var MARGIN = 50;
+	var MARGIN = 40;
 
 	// Boundary of point relative to point of origin
 	var BOUNDARY = 50;
@@ -25,16 +25,16 @@
 	var VMY = 1.7;
 
 	// Radius multiplier
-	var RM = 2;
+	var RM = 2.5;
 
 	// Minimum distance for connection to occur
-	var MIN_DIST = 80;
+	var MIN_DIST = 50;
 
 	// Connection limit for each point
 	var MAX_NEAR = 5;
 
 	// Mouse show radius
-	var MOUSE_RADIUS = 200;
+	var MOUSE_RADIUS = 500;
 
 	/** End Config **/
 
@@ -45,7 +45,7 @@
 
 	var ctx = canvas.getContext('2d');
 	ctx.font = '10px Arial';
-	
+
 	var mouse = {
 		x: canvas.width / 2,
 		y: canvas.height / 2
